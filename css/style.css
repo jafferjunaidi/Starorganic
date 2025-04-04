@@ -1,0 +1,306 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+swiper-slide img {
+  width: 100%;
+  height: 900px;
+}
+
+body {
+  background-color: white;
+}
+/* 3rd */
+
+swiper-container {
+  width: 100%;
+}
+
+swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 600px;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+#a li a{
+  font-size: 18px;
+  margin-right: 3em;
+}
+
+ul li {
+  padding: 9px;
+  font-weight: bold;
+}
+
+ul li a {
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  border-radius: 9px;
+}
+ul li a:hover {
+  background-color: lightgreen;
+}
+
+.dropdown-menu{
+  height: 118px;
+  overflow: hidden scroll;
+ border-radius: 8px;
+}
+
+  .navbar-nav .nav-item .dropdown-menu li{
+  :hover{
+    background-color: orange;
+    color: white;
+    border-radius: 9px !important;
+  }
+}
+
+footer a {
+  text-decoration: none;
+  list-style: none;
+  border-radius: 5px;
+  
+}
+footer a:hover {
+  background-color: lightgreen;
+  color: rgb(220, 53, 69);
+}
+
+footer li p a{
+  font-size: 16px;
+  color: rgb(220, 53, 69);
+}
+
+footer li a{
+  font-size: 19px;
+}
+
+
+footer {
+  background-image: linear-gradient(wheat, wheat, wheat);
+}
+
+.copy{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* /Hover Fall Effect/ */
+.fall-item {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+.fall-item .mask,
+.fall-item .content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.fall-item img {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+.fall-item h2 {
+  text-transform: uppercase;
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+  position: relative;
+  background: rgba(0, 0, 0, 0.8);
+  margin: 0;
+}
+.fall-item p {
+  font-style: italic;
+  position: relative;
+  font-size: 19px;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px;
+  text-align: center;
+}
+.fall-effect .mask {
+  background-color: rgba(255, 255, 255, 0.7);
+  top: -200px;
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out 0.5s;
+  -moz-transition: all 0.3s ease-out 0.5s;
+  -o-transition: all 0.3s ease-out 0.5s;
+  -ms-transition: all 0.3s ease-out 0.5s;
+  transition: all 0.3s ease-out 0.5s;
+}
+.fall-effect h2 {
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(-100px);
+  -o-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  transform: translateY(-100px);
+  -webkit-transition: all 0.2s ease-in-out 0.1s;
+  -moz-transition: all 0.2s ease-in-out 0.1s;
+  -o-transition: all 0.2s ease-in-out 0.1s;
+  -ms-transition: all 0.2s ease-in-out 0.1s;
+  transition: all 0.2s ease-in-out 0.1s;
+}
+.fall-effect p {
+  color: #000;
+  -webkit-transform: translateY(-200px);
+  -moz-transform: translateY(-200px);
+  -o-transform: translateY(-200px);
+  -ms-transform: translateY(-200px);
+  transform: translateY(-200px);
+  -webkit-transition: all 0.2s ease-in-out 0.2s;
+  -moz-transition: all 0.2s ease-in-out 0.2s;
+  -o-transition: all 0.2s ease-in-out 0.2s;
+  -ms-transition: all 0.2s ease-in-out 0.2s;
+  transition: all 0.2s ease-in-out 0.2s;
+}
+.fall-effect a.btn {
+  -webkit-transform: translateY(-200px);
+  -moz-transform: translateY(-200px);
+  -o-transform: translateY(-200px);
+  -ms-transform: translateY(-200px);
+  transform: translateY(-200px);
+  -webkit-transition: all 0.2s ease-in-out 0.3s;
+  -moz-transition: all 0.2s ease-in-out 0.3s;
+  -o-transition: all 0.2s ease-in-out 0.3s;
+  -ms-transition: all 0.2s ease-in-out 0.3s;
+  transition: all 0.2s ease-in-out 0.3s;
+}
+.fall-effect:hover .mask {
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  top: 0px;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.fall-effect:hover h2 {
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  -ms-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+.fall-effect:hover p {
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  -ms-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.fall-effect:hover a.btn {
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+}
+/* Hover Fall Effect END* */
+
+.btn-grad {
+  background-image: linear-gradient(orange, orange,orange);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  font-weight: bold;
+}
+.gallery img {
+  height: 300px;
+}
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.modal-body img {
+  height: 300px;
+  width: 100%;
+}
+.card img:hover {
+  opacity: 0.5;
+}
+.card img {
+  height: 250px;
+}
+nav {
+  background-image: linear-gradient(orange, white, lightgreen);
+ 
+}
+nav img {
+  height: 60px;
+  width: auto;
+  margin-bottom: 5px;
+  margin-left:20px;
+}
+
+
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+
+#preloader img{
+  width: 480px; 
+  height: auto;
+}
+
