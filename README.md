@@ -33,7 +33,7 @@ This website features sections like Home, About, Products, Brands, Contact, FAQs
 **Framework:** Bootstrap
 <br><br>
 
-## Deployment
+## Deployment & Installation
 
   To run this project simply download or clone this repository in your local computer, open this project in visual studio code editor and download live server extension for live preview of this project.  
 <br>
